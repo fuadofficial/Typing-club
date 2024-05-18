@@ -35,10 +35,10 @@
                     <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
+                    <a class="nav-link" href="#product">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -73,8 +73,8 @@
         </div>
     </div>
 
-    <div class="container-fluid mt-5">
-        <h1 class="text-center m-3">Products</h1>
+    <div class="container-fluid mt-5" id="product">
+        <h1 class="text-center p-5">Products</h1>
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="card">
@@ -215,10 +215,24 @@
         </div>
     </div>
 
+    <form id="contact contactForm container-fluid" action="https://api.web3forms.com/submit" method="POST"
+        onsubmit="return validateForm()">
+        <div class="contact-page">
+            <h1>Contact Us</h1>
+            <div class="form">
+                <input type="hidden" name="access_key" value="7858cda8-1d9a-4ede-aa40-b883d3e41aca">
 
-    <!-- 
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="text" id="place" name="place" placeholder="Place">
+                <input id="email" name="email" type="email" placeholder="Email">
+                <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                <button id="submitBtn" type="submit" class="Submit btn btn-success">Submit</button>
+            </div>
+        </div>
+    </form>
+
     <footer>
-        <div class="footer bg-dark">
+        <div class="container-fluid text-white text-center p-5 bg-dark">
             <p>© 2024 Siblooms, Inc.
                 Footer navigation
                 Terms
@@ -230,17 +244,17 @@
                 Manage cookies
                 Do not share my personal information</p>
             <div class="icons">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                <a href=""><i class="text-white fa-brands fa-instagram"></i></a>
+                <a href=""><i class="text-white fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="text-white fa-brands fa-facebook"></i></a>
+                <a href=""><i class="text-white fa-brands fa-square-twitter"></i></a>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
 
 
-    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
